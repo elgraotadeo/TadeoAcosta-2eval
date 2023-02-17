@@ -1,0 +1,65 @@
+body{
+    height: 100vh;
+}
+
+header{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header h1{
+    background-color: lightpink;
+    text-align: center;
+    margin-bottom: 0;
+    color: blue;
+}
+
+
+.menu{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+.menu a{
+    color: royalblue;
+}
+
+.menu a:hover{
+    background-color: yellow;
+    color: black;
+}
+
+main p{
+    text-align: center;
+}
+
+main{
+    margin-top: 50px;
+    background-color: lightsalmon;
+    width: 700px;
+    color: blue;
+    font-weight: bold;
+}
+
+main div{
+    text-align: center;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+}
+
+.opinion{
+    bottom: 0;
+}
+
+.opinion textarea{
+    height: 120px !important;
+    width: 220px !important;
+    resize: none; 
+}
+
+#votar{
+    display: inline;
+    text-align: center;
+    margin-bottom: 30px;
+}

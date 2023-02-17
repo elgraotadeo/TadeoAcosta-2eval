@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte</title>
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Premis GOYA</a></h1>
+        <div class="menu">
+            <a href="index.html">Edicions Anteriors</a> -
+            <a href="index.html">Nominats</a> -
+            <a href="contacte.html">Contacte</a>
+        </div>
+    </header>
+    <main>
+        <p>Contacte</p>
+        <div class="name">
+            Nom<input type="text" id="name">
+            Cognoms <input type="text" id="surname">
+        </div>
+        <div class="film">
+            Peli favorita
+            <select name="list" id="favorite"></select>
+            Puntuació <input type="punt" min="1" max="10" name="Puntuació" id="punt" >
+            
+        </div>
+        <div class="opinion">
+            <a>Opinió</a>
+            <textarea name="op" id="op" cols="30" rows="10" ></textarea>
+        </div>
+        <div class="wrapper-send">
+            <input id="votar" type="button" value="Votar" onclick="send()">
+        </div>
+        
+    </main>
+    <script>
+        function send(){
+            const name = document.getElementById('name').value;
+            const surname = document.getElementById('surname').value;
+            const favorite = document.getElementById('favorite').value;
+            const punt = document.getElementById('punt').value;
+            const op = document.getElementById('op').value;
+
+        open(`votacio.php?name=${name}&surname=${surname}&favorite=${favorite}&punt=${punt}&op=${op}`)
+
+        }
+    </script>
+</body>
+</html>
